@@ -18,7 +18,7 @@ function CreatePost({ onPostCreated }) {
       }
 
       await axios.post(
-        'http://localhost:5000/api/posts',
+        `${process.env.REACT_APP_API_URL}/api/posts`,
         { content },
         {
           headers: {
