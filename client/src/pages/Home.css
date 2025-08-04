@@ -1,0 +1,106 @@
+/* Home.css */
+
+.home-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f2ef;
+  animation: fadeIn 0.5s ease-in;
+}
+
+h2 {
+  text-align: center;
+  color: #0a66c2;
+  margin-bottom: 30px;
+}
+
+.post-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.5s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-header h4 {
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.post-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 10px;
+  }
+
+  .post-card {
+    padding: 14px;
+  }
+
+  .post-header h4 {
+    font-size: 1rem;
+  }
+
+  .post-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

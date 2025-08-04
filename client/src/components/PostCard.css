@@ -1,0 +1,23 @@
+.post-card {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.post-card h3 {
+  margin: 0;
+  color: #0077b5;
+}
+.post-card .bio {
+  color: #555;
+  font-size: 14px;
+}
+.post-card .content {
+  margin: 12px 0;
+  font-size: 16px;
+}
+.post-card small {
+  color: #999;
+}

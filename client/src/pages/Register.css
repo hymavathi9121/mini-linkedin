@@ -1,0 +1,40 @@
+.register-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.register-form input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #0073b1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  .login-container,
+  .register-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .login-form input,
+  .register-form input,
+  .login-form button,
+  .register-form button {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+}
