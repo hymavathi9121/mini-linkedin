@@ -10,7 +10,7 @@ const Home = () => {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/posts');
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/posts`);
       setPosts(res.data);
       setError('');
     } catch (error) {

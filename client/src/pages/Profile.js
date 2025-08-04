@@ -25,8 +25,7 @@ const Profile = () => {
           setLoading(false);
           return;
         }
-
-        const res = await axios.get(`http://localhost:5000/api/users/${userId}`, {
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
